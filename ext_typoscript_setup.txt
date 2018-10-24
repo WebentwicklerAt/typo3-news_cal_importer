@@ -1,0 +1,44 @@
+config.tx_extbase {
+    persistence {
+        classes {
+            WebentwicklerAt\NewsCalImporter\Domain\Model\CalCategory {
+                mapping {
+                    tableName = tx_cal_category
+                    columns {
+                        tstamp.mapOnProperty = tstamp
+                        crdate.mapOnProperty = crdate
+                        cruser_id.mapOnProperty = cruserId
+                        hidden.mapOnProperty = hidden
+                        starttime.mapOnProperty = starttime
+                        endtime.mapOnProperty = endtime
+                        sorting.mapOnProperty = sorting
+                        parent_category.mapOnProperty = parent
+                        sys_language_uid.mapOnProperty = sysLanguageUid
+                        l18n_parent.mapOnProperty = languageParentUid
+                    }
+                }
+            }
+            WebentwicklerAt\NewsCalImporter\Domain\Model\CalEvent {
+                mapping {
+                    tableName = tx_cal_event
+                    columns {
+                        tstamp.mapOnProperty = tstamp
+                        crdate.mapOnProperty = crdate
+                        cruser_id.mapOnProperty = cruserId
+                        hidden.mapOnProperty = hidden
+                        starttime.mapOnProperty = starttime
+                        endtime.mapOnProperty = endtime
+                        start_date.mapOnProperty = calStartDate
+                        end_date.mapOnProperty = calEndDate
+                        start_time.mapOnProperty = calStartTime
+                        end_time.mapOnProperty = calEndTime
+                        timezone.mapOnProperty = timezone
+                        category_id.mapOnProperty = category
+                        sys_language_uid.mapOnProperty = sysLanguageUid
+                        l18n_parent.mapOnProperty = languageParentUid
+                    }
+                }
+            }
+        }
+    }
+}

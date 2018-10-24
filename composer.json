@@ -1,0 +1,34 @@
+{
+  "name": "webentwicklerat/news-cal-importer",
+  "description": "Converts EXT:cal to EXT:news entries.",
+  "keywords": [
+    "typo3",
+    "cal",
+    "news",
+    "import",
+    "importer",
+    "convert",
+    "converter"
+  ],
+  "homepage": "https://github.com/WebentwicklerAt/typo3-news_cal_importer",
+  "type": "typo3-cms-extension",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Gernot Leitgab",
+      "homepage": "https://webentwickler.at"
+    }
+  ],
+  "require": {
+    "typo3/cms": "~7.6.0 || ~8.7.0"
+  },
+  "replace": {
+    "news-cal-importer": "self.version",
+    "typo3-ter/news-cal-importer": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "WebentwicklerAt\\NewsCalImporter\\": "Classes/"
+    }
+  }
+}

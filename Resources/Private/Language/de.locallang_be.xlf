@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2018-07-19T21:14:00Z" product-name="news_cal_importer">
+        <header/>
+        <body>
+            <trans-unit id="CalCategoryImportJob.title" xml:space="preserve">
+                <target>Import von tx_cal_category-Datensätzen</target>
+            </trans-unit>
+            <trans-unit id="CalEventImportJob.title" xml:space="preserve">
+                <target>Import von tx_cal_event-Datensätzen</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
